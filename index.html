@@ -1,21 +1,35 @@
 <!DOCTYPE html>
+<html>
 	<head>
 		<meta charset="utf-8">
 		<title>Title</title>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="styles.css">
 		<script src="processing.js"></script>
 	</head>
 	<body>
 		<header>
-			<h1>Header</h1>
+			<h1>In space we ball..</h1>
 		</header>
-			<section id="content">
-				<canvas id="AsteroidsGame" data-processing-sources="Asteroid.pde AsteroidsGame.pde Floater.pde Spaceship.pde Star.pde">
-				</canvas>
-		    </section>
-	    <footer>
-		    Footer
-	    </footer>
+
+		<section id="content">
+			<canvas id="AsteroidsGame"
+				data-processing-sources="Asteroid.pde AsteroidsGame.pde Floater.pde Spaceship.pde Star.pde">
+			</canvas>
+
+			<div id="instructions" style="margin-top: 20px; font-family: 'Open Sans', sans-serif;">
+				<h2>How to Control the Spaceship</h2>
+				<ul style="line-height: 1.6;">
+					<li><strong>Left Arrow</strong> – Rotate Left</li>
+					<li><strong>Right Arrow</strong> – Rotate Right</li>
+					<li><strong>Up Arrow</strong> – Accelerate / Thrust</li>
+					<li><strong>H</strong> – Hyperspace (teleport to a random position & stop movement)</li>
+				</ul>
+			</div>
+		</section>
+
+		<footer>
+			ZOOOOOMMMMmmmmmmmmmmmmmmmm......
+		</footer>
 	</body>
 </html>
