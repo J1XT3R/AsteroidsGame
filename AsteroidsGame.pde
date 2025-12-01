@@ -1,5 +1,5 @@
 Spaceship ship;
-ArrayList <Asteroid> asteroids;
+ArrayList <Asteroid> asteroids = new ArrayList<Asteroid>();
 Star[] stars;
 
 void setup() {
@@ -12,7 +12,6 @@ void setup() {
     stars[i] = new Star();
   }
 
-  asteroids = new ArrayList<Asteroid>();
   for (int i = 0; i < 5; i++) {
     asteroids.add(new Asteroid());
   }
