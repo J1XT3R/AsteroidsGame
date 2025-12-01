@@ -1,5 +1,5 @@
 Spaceship ship;
-ArrayList <Asteroid> asteroids = new ArrayList<Asteroid>();
+ArrayList <Asteroid> asteroids = new ArrayList <Asteroid> ();
 Star[] stars;
 
 void setup() {
