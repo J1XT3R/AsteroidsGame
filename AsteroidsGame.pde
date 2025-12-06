@@ -146,6 +146,7 @@ void draw() {
       if (sd < 20) {
         shipAlive = false;
         shipExploding = true;
+        score = 0;
         explosionX = ship.getX();
         explosionY = ship.getY();
         shipRespawnTime = millis() + 2000;
