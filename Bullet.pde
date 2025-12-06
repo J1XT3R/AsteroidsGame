@@ -1,8 +1,8 @@
-public class Bullet extends Floater {
-  
+class Bullet extends Floater {
+
   int spawnTime;
 
-  public Bullet(Spaceship theShip) {
+  Bullet(Spaceship theShip) {
     corners = 0;
     xCorners = new int[0];
     yCorners = new int[0];
@@ -18,19 +18,25 @@ public class Bullet extends Floater {
     myPointDirection = theShip.getDirection();
 
     accelerate(6.0);
-    
+
     spawnTime = millis();
   }
 
-  @Override
-  public void show() {
+  void show() {
     fill(myColor);
     noStroke();
     ellipse((float)myCenterX, (float)myCenterY, 8, 8);
   }
-  
-  public float getX() { return (float)myCenterX; }
-  public float getY() { return (float)myCenterY; }
-  
-   public boolean isExpired() { return millis() - spawnTime > 5000; }
+
+  float getX() {
+    return (float)myCenterX;
+  }
+
+  float getY() {
+    return (float)myCenterY;
+  }
+
+  boolean isExpired() {
+    return millis() - spawnTime > 5000;
+  }
 }

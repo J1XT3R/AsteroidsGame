@@ -1,6 +1,6 @@
-public class Spaceship extends Floater {
+class Spaceship extends Floater {
 
-  public Spaceship() {
+  Spaceship() {
     corners = 3;
     xCorners = new int[] { -10, 15, -10 };
     yCorners = new int[] { -10, 0, 10 };
@@ -16,7 +16,7 @@ public class Spaceship extends Floater {
     myPointDirection = 0; // facing right
   }
 
-  public void hyperspace() {
+  void hyperspace() {
     myCenterX = Math.random() * width;
     myCenterY = Math.random() * height;
 
@@ -26,9 +26,23 @@ public class Spaceship extends Floater {
     myPointDirection = Math.random() * 360;
   }
 
-  public float getX() { return (float)myCenterX; }
-  public float getY() { return (float)myCenterY; }
-  public double getXSpeed() { return myXspeed;   }
-  public double getYSpeed() { return myYspeed;   }
-  public double getDirection() { return myPointDirection; }
+  float getX() {
+    return (float)myCenterX;
+  }
+
+  float getY() {
+    return (float)myCenterY;
+  }
+
+  double getXSpeed() {
+    return myXspeed;
+  }
+
+  double getYSpeed() {
+    return myYspeed;
+  }
+
+  double getDirection() {
+    return myPointDirection;
+  }
 }

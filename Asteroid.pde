@@ -1,9 +1,8 @@
-public class Asteroid extends Floater {
+class Asteroid extends Floater {
 
-  private double rotationSpeed;
+  double rotationSpeed;
 
-  public Asteroid() {
-
+  Asteroid() {
     corners = 8;
     xCorners = new int[] { -20, -10, 5, 15, 20, 10, -5, -15 };
     yCorners = new int[] { -10, -20, -20, -10, 5, 15, 20, 10 };
@@ -21,11 +20,15 @@ public class Asteroid extends Floater {
     rotationSpeed = Math.random() * 4 - 2;
   }
 
-  public float getX() { return (float)myCenterX; }
-  public float getY() { return (float)myCenterY; }
+  float getX() {
+    return (float)myCenterX;
+  }
 
-  @Override
-  public void move() {
+  float getY() {
+    return (float)myCenterY;
+  }
+
+  void move() {
     myCenterX += myXspeed;
     myCenterY += myYspeed;
 
